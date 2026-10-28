@@ -73,18 +73,18 @@ function SignInPage() {
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               placeholder="Password"
-              className="mt-[5px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
+              className="mt-[10px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
             />
           </div>
 
           <button
             type="submit"
-            className="mt-[32px] block h-[45px] w-full rounded-[4px] bg-primary text-[13px] font-normal uppercase tracking-[1px] text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
+            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[13px] font-normal uppercase tracking-[1px] text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
           >
             Sign In
           </button>
 
-          <div className="mt-[31px] text-right">
+          <div className="mt-[23px] text-right">
             <a href="#" className="text-[13px] leading-none text-link-cyan hover:underline">
               Forgot Password?
             </a>
