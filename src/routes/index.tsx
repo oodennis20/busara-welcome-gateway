@@ -29,16 +29,16 @@ function SignInPage() {
 
   return (
     <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-24">
-      <div className="w-full max-w-[360px] bg-card px-[45px] pt-[80px] pb-[110px] shadow-card">
+      <div className="w-full max-w-[360px] bg-card px-[45px] pt-[89px] pb-[110px] shadow-card">
         <h1 className="text-center text-[41px] font-black leading-none tracking-tight">
           <span className="text-primary">Busara</span>
           <span className="text-logo-muted">Hub</span>
         </h1>
-        <p className="mt-[30px] text-center text-[14px] font-normal uppercase leading-none tracking-[2px] text-signin-heading">
+        <p className="mt-[36px] text-center text-[14px] font-normal uppercase leading-none tracking-[2px] text-signin-heading">
           Sign in to your account
         </p>
 
-        <form className="mt-[38px]" onSubmit={(event) => event.preventDefault()}>
+        <form className="mt-[41px]" onSubmit={(event) => event.preventDefault()}>
           <div>
             <label
               htmlFor="email"
