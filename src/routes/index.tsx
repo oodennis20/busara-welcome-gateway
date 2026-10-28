@@ -54,7 +54,7 @@ function SignInPage() {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               placeholder="Email"
-              className="mt-[5px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
+              className="mt-[10px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
             />
           </div>
 
