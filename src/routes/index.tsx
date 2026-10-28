@@ -28,19 +28,22 @@ function SignInPage() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-login-bg px-4 py-10">
-      <div className="w-full max-w-[356px] bg-card px-10 pb-14 pt-20 shadow-card">
-        <h1 className="text-center text-[34px] font-black leading-none tracking-tight">
+    <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-24">
+      <div className="w-full max-w-[360px] bg-card px-[45px] pt-[89px] pb-[110px] shadow-card">
+        <h1 className="text-center text-[41px] font-black leading-none tracking-tight">
           <span className="text-primary">Busara</span>
           <span className="text-logo-muted">Hub</span>
         </h1>
-        <p className="mt-7 text-center text-[15px] font-light uppercase tracking-[0.18em] text-signin-heading">
+        <p className="mt-[36px] text-center text-[14px] font-normal uppercase leading-none tracking-[2px] text-signin-heading">
           Sign in to your account
         </p>
 
-        <form className="mt-10" onSubmit={(event) => event.preventDefault()}>
+        <form className="mt-[41px]" onSubmit={(event) => event.preventDefault()}>
           <div>
-            <label htmlFor="email" className="block text-sm text-label-green">
+            <label
+              htmlFor="email"
+              className="block text-[12px] leading-none text-label-green"
+            >
               Email
             </label>
             <input
@@ -48,18 +51,17 @@ function SignInPage() {
               name="email"
               type="email"
               autoComplete="email"
-              autoFocus
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               placeholder="Email"
-              className="mt-2 block w-full rounded-[4px] border border-border bg-card px-3 py-[9px] text-sm text-foreground transition-shadow placeholder:text-muted-foreground/70 focus:border-input-blue focus:shadow-input-focus focus:outline-none"
+              className="mt-[10px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
             />
           </div>
 
-          <div className="mt-5">
+          <div className="mt-[26px]">
             <label
               htmlFor="password"
-              className="block text-sm text-label-green"
+              className="block text-[12px] leading-none text-label-green"
             >
               Password
             </label>
@@ -71,19 +73,19 @@ function SignInPage() {
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               placeholder="Password"
-              className="mt-2 block w-full rounded-[4px] border border-border bg-input-gray px-3 py-[9px] text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-input-blue focus:shadow-input-focus focus:outline-none"
+              className="mt-[10px] block h-[30px] w-full rounded-[4px] border border-border bg-input-gray px-[14px] text-[12px] text-foreground transition-shadow placeholder:text-logo-muted focus:border-input-blue focus:bg-card focus:shadow-input-focus focus:outline-none"
             />
           </div>
 
           <button
             type="submit"
-            className="mt-7 w-full rounded-[4px] bg-primary py-3 text-sm font-medium uppercase tracking-[0.08em] text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
+            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[13px] font-normal uppercase tracking-[1px] text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
           >
             Sign In
           </button>
 
-          <div className="mt-6 text-right">
-            <a href="#" className="text-sm text-link-cyan hover:underline">
+          <div className="mt-[23px] text-right">
+            <a href="#" className="text-[13px] leading-none text-link-cyan hover:underline">
               Forgot Password?
             </a>
           </div>
