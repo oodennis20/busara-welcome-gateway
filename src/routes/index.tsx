@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import logoAsset from "../assets/busara-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,13 +29,16 @@ function SignInPage() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-24">
-      <div className="w-full max-w-[360px] bg-card px-[45px] pt-[89px] pb-[110px] shadow-card">
-        <h1 className="text-center text-[41px] font-black leading-none tracking-tight">
-          <span className="text-primary">Busara</span>
-          <span className="text-logo-muted">Hub</span>
-        </h1>
-        <p className="mt-[36px] text-center text-[14px] font-normal uppercase leading-none tracking-[2px] text-signin-heading">
+    <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-[15px]">
+      <div className="w-full max-w-[360px] bg-card px-[45px] pt-[93px] pb-[60px] shadow-card">
+        <img
+          src={logoAsset.url}
+          alt="BusaraHub"
+          width={221}
+          height={33}
+          className="mx-auto block h-[33px] w-[221px]"
+        />
+        <p className="mt-[40px] text-center text-[14px] font-normal uppercase leading-none tracking-[1.25px] text-signin-heading">
           Sign in to your account
         </p>
 
@@ -42,7 +46,7 @@ function SignInPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-[12px] leading-none text-label-green"
+              className="block text-[11px] leading-none text-label-green"
             >
               Email
             </label>
@@ -61,7 +65,7 @@ function SignInPage() {
           <div className="mt-[26px]">
             <label
               htmlFor="password"
-              className="block text-[12px] leading-none text-label-green"
+              className="block text-[11px] leading-none text-label-green"
             >
               Password
             </label>
@@ -79,13 +83,13 @@ function SignInPage() {
 
           <button
             type="submit"
-            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[13px] font-normal uppercase tracking-[1px] text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
+            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[12px] font-light uppercase text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
           >
             Sign In
           </button>
 
           <div className="mt-[23px] text-right">
-            <a href="#" className="text-[13px] leading-none text-link-cyan hover:underline">
+            <a href="#" className="text-[11.5px] leading-none text-link-cyan hover:underline">
               Forgot Password?
             </a>
           </div>
