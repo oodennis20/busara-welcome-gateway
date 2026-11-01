@@ -6,7 +6,7 @@ import logoAsset from "../assets/busara-logo.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BusaraHub — Sign In" },
+      { title: "Busara Hub" },
       { name: "description", content: "Sign in to your BusaraHub account." },
       { property: "og:title", content: "Busara Hub" },
       {
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "BusaraHub — Sign In" },
+      { name: "twitter:title", content: "Busara Hub" },
       {
         name: "twitter:description",
         content: "Sign in to your BusaraHub account.",
