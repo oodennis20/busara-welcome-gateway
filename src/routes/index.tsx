@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "BusaraHub — Sign In" },
       { name: "description", content: "Sign in to your BusaraHub account." },
-      { property: "og:title", content: "BusaraHub — Sign In" },
+      { property: "og:title", content: "Busara Hub" },
       {
         property: "og:description",
         content: "Sign in to your BusaraHub account.",
