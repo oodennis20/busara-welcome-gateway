@@ -54,8 +54,8 @@ function SignInPage() {
           src={logoAsset}
           alt="BusaraHub"
           width={221}
-          height={45}
-          className="mx-auto block h-[45px] w-[221px]"
+          height={33}
+          className="mx-auto block h-[33px] w-[221px]"
         />
         <p className="mt-[40px] text-center text-[14px] font-normal uppercase leading-none tracking-[1.25px] text-signin-heading">
           Sign in to your account
