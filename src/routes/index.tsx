@@ -35,6 +35,10 @@ function SignInPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const password = (form.elements.namedItem("password") as HTMLInputElement).value;
+    
     await fetch("/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
