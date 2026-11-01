@@ -46,7 +46,7 @@ function SignInPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-[11px] leading-none text-label-green"
+              className="block text-[12px] font-light leading-none text-label-green"
             >
               Email
             </label>
@@ -65,7 +65,7 @@ function SignInPage() {
           <div className="mt-[26px]">
             <label
               htmlFor="password"
-              className="block text-[11px] leading-none text-label-green"
+              className="block text-[12px] font-light leading-none text-label-green"
             >
               Password
             </label>
@@ -83,7 +83,7 @@ function SignInPage() {
 
           <button
             type="submit"
-            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[12px] font-light uppercase text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
+            className="mt-[31px] block h-[45px] w-full rounded-[4px] bg-primary text-[12px] font-normal uppercase text-primary-foreground shadow-signin transition-colors hover:bg-primary/95 focus:outline-none focus-visible:ring-2 focus-visible:ring-input-blue"
           >
             Sign In
           </button>
