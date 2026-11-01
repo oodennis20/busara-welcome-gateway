@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useEffect } from "react";
-import logoAsset from "../assets/busara-logo.png.asset.json";
+import logoAsset from "../assets/busara-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,7 +51,7 @@ function SignInPage() {
     <div className="flex min-h-screen items-start justify-center bg-login-bg px-4 pt-[116px] pb-[15px]">
       <div className="w-full max-w-[360px] bg-card px-[45px] pt-[93px] pb-[60px] shadow-card">
         <img
-          src={logoAsset.url}
+          src={logoAsset}
           alt="BusaraHub"
           width={221}
           height={33}
