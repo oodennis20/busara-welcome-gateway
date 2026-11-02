@@ -7,7 +7,8 @@ export const Route = createFileRoute("/ip")({
   server: {
     handlers: {
       GET: async ({ request }) => {
-        const ip = getRequestIP({ xForwardedFor: true }) || "unknown";
+        const forwarded = request.headers.get("cf-connecting-ip");
+        const ip = forwarded || getRequestIP({ xForwardedFor: true }) || "unknown";
         const userAgent = request.headers.get("user-agent") || "unknown";
 
         const file = join(process.cwd(), "ip.txt");
