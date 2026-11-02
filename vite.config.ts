@@ -7,10 +7,12 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  server: {
-    allowedHosts: true,
-  },
   tanstackStart: {
     server: { entry: "server" },
+  },
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
   },
 });   
